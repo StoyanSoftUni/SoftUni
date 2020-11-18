@@ -1,0 +1,6 @@
+money=int(input())
+days=int(input())
+lihva=float(input())
+sol=money*(0.01*lihva)
+sol1=sol/12
+print(money+(sol1*days))
