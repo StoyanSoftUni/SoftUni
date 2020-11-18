@@ -1,0 +1,10 @@
+days=int(input())
+peoples=int(input())
+cakes=int(input())
+goof=int(input())
+puncakes=int(input())
+forday=(cakes*45+goof*5.80+puncakes*3.20)*peoples
+all=days*forday
+razhod=all/8
+end=all-razhod
+print(end)
