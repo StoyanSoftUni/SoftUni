@@ -1,0 +1,6 @@
+books=int(input())
+pages_hour=int(input())
+days=int(input())
+sol1=books/pages_hour
+sol2=sol1/days
+print(sol2)
