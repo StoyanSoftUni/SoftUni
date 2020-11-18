@@ -1,0 +1,6 @@
+import math
+from math import pi
+from math import floor
+rad=float(input())
+deg=floor(rad*180/pi)
+print(deg)
