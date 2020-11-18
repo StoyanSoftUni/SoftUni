@@ -1,0 +1,8 @@
+w=int(input())
+sh=int(input())
+l=int(input())
+za=float(input())
+v=w*sh*l
+sol=v*0.001
+sol2=sol*(1-(za*0.01))
+print(sol2)
