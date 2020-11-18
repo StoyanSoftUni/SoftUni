@@ -1,0 +1,7 @@
+rent=int(input())
+cake=(rent/10)*2
+drinks=(cake/10)*4.5
+drinks1= cake-drinks
+ani=rent/3
+sol=rent+ani+drinks1+cake
+print(sol)
