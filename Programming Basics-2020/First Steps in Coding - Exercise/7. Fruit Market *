@@ -1,0 +1,13 @@
+straw=float(input())
+kgbana=float(input())
+kgoran=float(input())
+kgmali=float(input())
+kgstr=float(input())
+malini=straw/2
+oranges= malini-(0.4*malini)
+bannanas=malini-(0.8*malini)
+sol=kgbana*bannanas
+sol1=kgoran*oranges
+sol2=kgmali*malini
+sol3=kgstr*straw
+print(sol1+sol+sol2+sol3)
