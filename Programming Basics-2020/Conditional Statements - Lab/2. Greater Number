@@ -1,0 +1,6 @@
+fi=int(input())
+se=int(input())
+if fi>se:
+    print(fi)
+else:
+    print(se)
