@@ -1,0 +1,28 @@
+money_for_trip=float(input())
+puzzels=int(input())
+dolls=int(input())
+bears=int(input())
+minnions=int(input())
+trucks=int(input())
+
+toys_total=puzzels*2.60 + dolls*3 + bears*4.10 + minnions*8.20 + trucks*2
+toys=dolls+bears+minnions+trucks+puzzels
+
+if toys>=50:
+    discount=toys_total*0.25
+    total=toys_total-discount
+    total1=total-(total*0.10)
+    if total1>money_for_trip:
+        total2=total1-money_for_trip
+        print("Yes!", round(total2,2) ,"lv left.")
+    else:
+        total3=money_for_trip-total1
+        print("Not enough money!", round(total3,2),"lv needed.")
+else:
+    total=toys_total-(toys_total*0.10)
+    if total>money_for_trip:
+        total1=total-money_for_trip
+        print("Yes!", round(total1,2) ,"lv left.")
+    else:
+        total3=money_for_trip-total
+        print("Not enough money!", round(total3,2) ,"lv needed.")
