@@ -1,0 +1,19 @@
+from math import pi
+figure = input()
+if figure=="square":
+    a=float(input())
+    s=pow(a,2)
+    print(round(s,3))
+elif figure=="rectangle":
+    a = float(input())
+    b = float(input())
+    s=a*b
+    print(round(s,3))
+elif figure=="triangle":
+    a = float(input())
+    b = float(input())
+    s=(a*b)/2
+    print(round(s,3))
+elif figure=="circle":
+    a = float(input())
+    print(round(pow(a,2)*pi,3))
