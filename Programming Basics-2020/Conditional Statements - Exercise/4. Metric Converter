@@ -1,0 +1,24 @@
+number=float(input())
+first_value=input()
+second_value=input()
+if first_value=="mm":
+  if second_value=="m":
+    sol=number/1000
+    print(f"{sol:.3f}")
+  else:
+    sol=number/10
+    print(f"{sol:.3f}")
+elif first_value=="m":
+  if second_value=="mm":
+    sol=number*1000
+    print(f"{sol:.3f}")
+  else:
+    sol=number*100
+    print(f"{sol:.3f}")
+else:
+  if second_value=="m":
+    sol=number/100
+    print(f"{sol:.3f}")
+  else:
+    sol=number*10
+    print(f"{sol:.3f}")
