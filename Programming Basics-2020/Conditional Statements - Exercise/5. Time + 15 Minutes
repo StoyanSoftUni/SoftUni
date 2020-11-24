@@ -1,0 +1,11 @@
+from math import floor
+hours=int(input())
+minutes=int(input())
+if hours<=23 and minutes<=59:
+    total_minutes=hours*60 + minutes +15
+    total_hours=floor(total_minutes/60)
+    total_minutes1=floor(total_minutes%60)
+    if total_minutes1<=9:
+        print(f"{total_hours}:0{total_minutes1}")
+    else:
+        print(f"{total_hours}:{total_minutes1}")
