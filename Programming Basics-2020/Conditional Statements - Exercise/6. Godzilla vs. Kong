@@ -1,0 +1,28 @@
+from math import *
+budget = float(input())
+actors = int(input())
+price_clothes = float(input())
+
+actors_clothes = actors * price_clothes                             
+money_decor = budget*0.10                                                
+
+if actors > 150:
+    price_clothes1 = actors_clothes - (actors_clothes*0.10)
+    if price_clothes1 + money_decor < budget:
+        sol1 = budget-(price_clothes1 + money_decor)
+        print("Action!")
+        print(f"Wingard starts filming with {sol1:.2f} leva left.")
+    elif budget < price_clothes1+money_decor:
+        sol=(price_clothes1+money_decor)-budget
+        print("Not enough money!")
+        print(f"Wingard needs {sol:.2f} leva more.")
+
+else:
+    if actors_clothes + money_decor < budget:
+        sol1 = budget-(actors_clothes + money_decor)
+        print("Action!")
+        print(f"Wingard starts filming with {sol1:.2f} leva left.")
+    elif actors_clothes+money_decor>budget:
+        sol=(actors_clothes+money_decor)-budget
+        print("Not enough money!")
+        print(f"Wingard needs {sol:.2f} leva more.")
