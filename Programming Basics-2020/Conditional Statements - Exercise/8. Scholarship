@@ -1,0 +1,21 @@
+from math import *
+salary_monthly=float(input())
+grades=float(input())
+minimal_salary=float(input())
+if grades>=4.50 and salary_monthly<=minimal_salary:
+    sol=minimal_salary*0.35
+    print(f"You get a Social scholarship {floor(sol)} BGN")
+elif grades>= 5.50:
+    sol=grades*25
+    print(f"You get a scholarship for exellent result {floor(sol)} BGN")
+elif grades>=5.50 and salary_monthly<=minimal_salary:
+    sol1=grades*25
+    sol2=minimal_salary*0.35
+    if sol1>sol2:
+        print(f"You get a scholarship for exellent result {floor(sol1)} BGN")
+    elif sol2>sol1:
+        print(f"You get a Social scholarship {floor(sol2)} BGN.")
+    elif sol1==sol2:
+        print(f"You get a scholarship for exellent result {floor(sol1)} BGN")
+else:
+    print("You cannot get a scholarship!")
