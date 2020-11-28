@@ -1,0 +1,29 @@
+num1=int(input())
+num2=int(input())
+char=input()
+even_odd=""
+sum=0
+if char=="+":
+    sum=num1+num2
+elif char=="-":
+    sum=num1-num2
+elif char=="*":
+    sum=num1*num2
+elif char=="/" and num1!=0 and num2!=0:
+    sum=num1/num2
+    print(f"{num1} {char} {num2} = {sum}")
+elif char=="%" and num1!=0 and num2!=0:
+    sum=num1%num2
+    print(f"{num1} {char} {num2} = {sum}")
+
+if  num1 == 0:
+    print(f"Cannot divide {num2} by zero")
+elif num2 == 0:
+    print(f"Cannot divide {num1} by zero")
+
+if sum%2==0 and char!="/" and char!="%":
+    even_odd="even"
+    print(f"{num1} {char} {num2} = {sum} - {even_odd}")
+elif sum%3==0 and char!="/" and char!="%":
+    even_odd="odd"
+    print(f"{num1} {char} {num2} = {sum} - {even_odd}")
