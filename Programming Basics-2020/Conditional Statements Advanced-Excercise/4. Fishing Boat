@@ -1,0 +1,26 @@
+budget=int(input())
+season=input()
+fishers=int(input())
+money=0
+if season=="Spring":
+    money=3000
+elif season=="Summer" or season=="Autumn":
+    money=4200
+else:
+    money=2600
+if fishers<=6:
+    money*=0.90
+elif 7<=fishers<=11:
+    money*=0.85
+else:
+    money*=0.75
+      
+if fishers%2==0 and season!="Autumn":
+    money*=0.95
+      
+if budget>money:
+    sol=budget-money
+    print(f"Yes! You have {sol:.2f} leva left.")
+else:
+    sol=abs(money-budget)
+    print(f"Not enough money! You need {sol:.2f} leva.")
