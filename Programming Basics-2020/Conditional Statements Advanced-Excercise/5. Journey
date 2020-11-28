@@ -1,0 +1,29 @@
+budget=float(input())
+season=input()
+destination=""
+kind_vacation=""
+money=0
+if budget<=100:
+    if season=="summer":
+        money=budget*0.30
+        destination="Bulgaria"
+        kind_vacation="Camp"
+    elif season=="winter":
+        money = budget * 0.70
+        destination = "Bulgaria"
+        kind_vacation = "Hotel"
+elif 100<budget<=1000:
+    if season=="summer":
+        money=budget*0.40
+        destination="Balkans"
+        kind_vacation="Camp"
+    elif season=="winter":
+        money = budget * 0.80
+        destination = "Balkans"
+        kind_vacation = "Hotel"
+else:
+    money=budget*0.90
+    destination="Europe"
+    kind_vacation="Hotel"
+print(f"Somewhere in {destination}")
+print(f"{kind_vacation} - {money:.2f}")
