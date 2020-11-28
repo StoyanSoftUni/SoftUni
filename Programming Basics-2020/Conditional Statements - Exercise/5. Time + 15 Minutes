@@ -9,3 +9,4 @@ if hours<=23 and minutes<=59:
         print(f"{total_hours}:0{total_minutes1}")
     else:
         print(f"{total_hours}:{total_minutes1}")
+el
