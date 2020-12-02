@@ -1,0 +1,16 @@
+tabs=int(input())
+salary=int(input())
+for i in range(0,tabs):
+    tabs_inside=input()
+    if tabs_inside=="Facebook":
+        salary-=150
+    elif tabs_inside=="Instagram":
+        salary-=100
+    elif tabs_inside=="Reddit":
+        salary-=50
+    if salary<=0:
+        break
+if salary>0:
+    print(salary)
+else:
+    print('You have lost your salary.')
