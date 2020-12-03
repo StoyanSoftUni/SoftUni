@@ -10,7 +10,5 @@ for i in range(0,tabs):
         salary-=50
     if salary<=0:
         break
-if salary>0:
-    print(salary)
-else:
-    print('You have lost your salary.')
+        print("You have lost your salary.")
+print(salary)
