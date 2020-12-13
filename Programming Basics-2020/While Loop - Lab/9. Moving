@@ -1,0 +1,19 @@
+a=int(input())
+b=int(input())
+c=int(input())
+boxes=input()
+room_cub=a*b*c
+boxes_cub=0
+left_space=0
+need_space=0
+while boxes!="Done":
+    boxes=input()
+    count_boxes=int(boxes)
+    boxes_cub+=count_boxes
+    if boxes_cub>=room_cub:
+        need_space=abs(boxes_cub-room_cub)
+        print(f"No more free space! You need {need_space} Cubic meters more.")
+        break
+if boxes=="Done":
+    left_space=room_cub-boxes_cub
+    print(f"{left_space} Cubic meters left.")
