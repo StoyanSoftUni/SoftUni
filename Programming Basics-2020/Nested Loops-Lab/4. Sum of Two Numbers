@@ -1,0 +1,17 @@
+start = int(input())
+end = int(input())
+m = int(input())
+counter = 0
+flag = False
+for i in range(start, end + 1):
+    if flag:
+        break
+    for j in range(start, end + 1):
+        counter+=1
+        if i + j == m:
+            flag=True
+            print(f"Combination N:{counter} ({i} + {j} = {m})")
+            break
+
+if not flag:
+    print(f"{counter} combinations - neither equals {m}")
