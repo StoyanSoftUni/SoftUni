@@ -1,0 +1,26 @@
+total=0
+standart=0
+kids=0
+student=0
+flag=False
+
+movie_name=input()
+while movie_name!="Finish":
+    if flag:
+        break
+    free_seats = int(input())
+    while free_seats > 0:
+        type_seats=input()
+        total+=1
+        if type_seats=="standard":
+            standart+=1
+        elif type_seats == "kid":
+            kids+=1
+        elif type_seats=="student":
+            student+=1
+        if type_seats=="End":
+            flag=True
+            break
+    print(student)
+    print(kids)
+    print(standart)
