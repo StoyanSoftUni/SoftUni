@@ -13,5 +13,5 @@ for i in range(start, end + 1):
             print(f"Combination N:{counter} ({i} + {j} = {m})")
             break
 
-if not flag:
+if flag == False:
     print(f"{counter} combinations - neither equals {m}")
