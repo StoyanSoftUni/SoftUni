@@ -1,0 +1,12 @@
+floors=int(input())
+rooms=int(input())
+
+for each_floors in range(floors,0,-1):
+    for each_rooms in range(0,rooms):
+        if each_floors==floors:
+            print(f"L{each_floors}{each_rooms}",end=" ")
+        elif each_floors%2==0:
+            print(f"O{each_floors}{each_rooms}", end=" ")
+        else:
+            print(f"A{each_floors}{each_rooms}", end=" ")
+    print()
