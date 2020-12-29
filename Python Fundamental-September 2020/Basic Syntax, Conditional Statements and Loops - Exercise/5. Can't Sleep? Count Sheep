@@ -1,0 +1,5 @@
+num = int(input())
+a = 1
+while a<=num:
+    print(f"{a} sheep...", end="")
+    a+=1
