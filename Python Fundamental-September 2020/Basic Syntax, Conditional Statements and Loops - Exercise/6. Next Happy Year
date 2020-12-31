@@ -1,0 +1,6 @@
+yea = int(input())
+while True:
+    yea+=1
+    if len(str(yea)) == len(set(str(yea))):
+        print(yea)
+        break
