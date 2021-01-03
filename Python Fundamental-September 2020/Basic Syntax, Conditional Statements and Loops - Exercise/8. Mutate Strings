@@ -1,0 +1,22 @@
+#8. Mutate Strings
+budget = float(input())
+kg_flour_price = float(input())
+
+eggs = kg_flour_price*0.75
+milk = (kg_flour_price + (kg_flour_price*0.25))/4
+total_cost = eggs + milk + kg_flour_price
+
+
+total_eggs = 0
+cozonacs = 0
+while True:
+    budget -= total_cost
+    total_eggs += 3
+    cozonacs += 1
+    if cozonacs % 3 == 0:
+        total_eggs = total_eggs - (cozonacs-2)
+    if budget < total_cost:
+        break
+
+
+print(f"You made {cozonacs} cozonacs! Now you have {total_eggs} eggs and {budget:.2f}BGN left.")
