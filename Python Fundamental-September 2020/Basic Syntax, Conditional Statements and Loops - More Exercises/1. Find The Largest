@@ -1,0 +1,5 @@
+a = input()
+lst = [int(i) for i in a]
+s = list(sorted(lst,reverse=True))
+sa = [str(e) for e in s]
+print("".join(sa))
