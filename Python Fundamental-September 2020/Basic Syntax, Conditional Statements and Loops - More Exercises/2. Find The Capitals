@@ -1,0 +1,7 @@
+a = input()
+a = [_ for _ in a]
+end = []
+for i in range(len(a)):
+    if a[i].isupper():
+        end.append(i)
+print(end)
