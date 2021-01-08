@@ -1,0 +1,12 @@
+v = 1
+a = input().lower()
+lst = ["water", "fish", "sun", "sand"]
+ender = ""
+counter = 0
+for i in a:
+    ender += i
+    for e in lst:
+        if e in ender:
+            counter += 1
+            ender = ""
+print(counter)
