@@ -1,0 +1,15 @@
+lst = ["coding","dog","cat","movie"]
+counter = 0
+while True:
+    data = input()
+    if data == "END":
+        break
+    for i in lst:
+        if data == i.lower():
+            counter += 1
+        elif data == i.upper():
+            counter += 2
+if counter > 5:
+    print("You need extra sleep")
+else:
+    print(counter)
