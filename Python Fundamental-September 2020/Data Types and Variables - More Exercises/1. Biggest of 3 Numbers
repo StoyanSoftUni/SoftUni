@@ -1,0 +1,8 @@
+lst_number = 0
+for i in range(0,3):
+    n = input()
+    if n.isdigit():
+        if lst_number < int(n):
+            lst_number = int(n)
+if lst_number != 0:
+    print(lst_number)
